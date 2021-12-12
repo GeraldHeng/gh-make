@@ -4,7 +4,42 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className={styles.container}>
+      <p className="text-3xl font-thin">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-extralight">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl label">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-light">
+        This is a long text and my address is Admiralty Link!
+      </p>
+
+      <p className="text-3xl font-normal">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-medium">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-semibold">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-semibold">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-bold">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-extrabold">
+        This is a long text and my address is Admiralty Link!
+      </p>
+      <p className="text-3xl font-black">
+        This is a long text and my address is Admiralty Link!
+      </p>
+    </div>
     // <div className={styles.container}>
     //   <Head>
     //     <title>Create Next App</title>
