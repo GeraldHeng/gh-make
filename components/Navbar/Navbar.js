@@ -1,19 +1,15 @@
 import Button from "../commons/Button";
 import Tilt from "../commons/Tilt";
 import NavItem from "./NavItem";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function Navbar({ items, ...rest }) {
   const [style, setStyle] = useState({ opacity: 0 });
 
   const onHamburgerIconToggled = () => {
-    console.log("onHamburgerIconToggled");
-    console.log(style.opacity);
     if (style.opacity == 0) {
-      console.log("set 1");
       setStyle({ opacity: 1 });
     } else {
-      console.log("set 0");
       setStyle({ opacity: 0 });
     }
   };
@@ -74,7 +70,7 @@ export default function Navbar({ items, ...rest }) {
         </div>
       </div>
       {/* <!-- mobile menu --> */}
-      <div className="mobile-menu" style={style}>
+      {/* <div className="mobile-menu" style={style}>
         <ul>
           <li className="active">
             <a
@@ -109,7 +105,7 @@ export default function Navbar({ items, ...rest }) {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
       {/* <!-- mobile menu end --> */}
     </nav>
   );
