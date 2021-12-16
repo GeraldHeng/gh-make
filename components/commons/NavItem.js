@@ -3,18 +3,26 @@ import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
 export default function NavItem({ children, active = false, ...rest }) {
-  const [style, setStyle] = useState("invisible");
+  const inlineStyle = {
+    transition: "opacity 200ms",
+  };
+
+  const [style, setStyle] = useState({ opacity: 0 });
+
+  const mouseEnterTrigger = () => {
+    setStyle({ opacity: 1 });
+  };
+
+  const mouseLeaveTrigger = () => {
+    setStyle({ opacity: 0 });
+  };
 
   return (
     <div
       {...rest}
       className="flex flex-col items-center"
-      onMouseEnter={() => {
-        setStyle("");
-      }}
-      onMouseLeave={() => {
-        setStyle("invisible");
-      }}
+      onMouseEnter={mouseEnterTrigger}
+      onMouseLeave={mouseLeaveTrigger}
     >
       <div
         className={`w-1 h-1 bg-pale-white rounded-full ${
@@ -27,7 +35,10 @@ export default function NavItem({ children, active = false, ...rest }) {
       >
         {children}
       </a>
-      <div className={`flex text-pale-white ${style}`}>
+      <div
+        className={`flex text-pale-white`}
+        style={{ ...inlineStyle, ...style }}
+      >
         <Image
           src="/images/hover_line.svg"
           height={5}

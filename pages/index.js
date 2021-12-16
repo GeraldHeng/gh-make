@@ -1,6 +1,6 @@
-import styles from "../styles/Home.module.css";
 import Button from "../components/commons/Button";
 import NavItem from "../components/commons/NavItem";
+import Tilt from "../components/commons/Tilt";
 
 export default function Home() {
   return (
@@ -19,18 +19,28 @@ export default function Home() {
                 </a>
               </div>
               {/* logo end */}
+
               {/* <!-- navbar items --> */}
               <div className="hidden md:flex items-center space-x-3">
-                <NavItem active={true}>Home</NavItem>
-                <NavItem>About</NavItem>
-                <NavItem>Works</NavItem>
-                <NavItem>Experience</NavItem>
+                <Tilt>
+                  <NavItem active={true}>Home</NavItem>
+                </Tilt>
+
+                <Tilt>
+                  <NavItem>About</NavItem>
+                </Tilt>
+                <Tilt>
+                  <NavItem>Works</NavItem>
+                </Tilt>
+                <Tilt>
+                  <NavItem>Experience</NavItem>
+                </Tilt>
 
                 <Button>Contact Me</Button>
               </div>
               {/* <!-- navbar items end --> */}
 
-              {/* <!-- Mobile menu button --> */}
+              {/* <!-- mobile menu button --> */}
               <div className="md:hidden flex items-center">
                 <button className="outline-none mobile-menu-button">
                   <svg

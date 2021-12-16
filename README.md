@@ -33,12 +33,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-font-thin font-weight: 100;
-font-extralight font-weight: 200;
-font-light font-weight: 300;
-font-normal font-weight: 400;
-font-medium font-weight: 500;
-font-semibold font-weight: 600;
-font-bold font-weight: 700;
-font-extrabold font-weight: 800;
-font-black font-weight: 900;
+- Implementing react spring and some stuff on react hooks
+  https://www.joshwcomeau.com/react/boop/
