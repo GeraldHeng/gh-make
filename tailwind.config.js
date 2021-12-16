@@ -4,7 +4,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        "pale-white": "#F8F8FF",
+        primary: "#02204C",
+        accent: "#FF7A7A",
+        "accent-dark": "#FF5757",
+        "accent-light": "#FFA5A5",
+      },
+      boxShadow: {
+        opaque: "2px 2px 0px 2px",
+      },
+    },
   },
   plugins: [],
 };
