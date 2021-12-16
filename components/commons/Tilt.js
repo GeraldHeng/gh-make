@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
-const Tilt = ({ rotation = 10, timing = 150, children }) => {
+const Tilt = ({ rotation = 5, timing = 150, children }) => {
   const [isTilted, setIsTilted] = useState(false);
 
   const style = useSpring({
@@ -12,7 +12,6 @@ const Tilt = ({ rotation = 10, timing = 150, children }) => {
       tension: 300,
       friction: 10,
     },
-    // transition: `transform ${timing}ms`,
   });
 
   useEffect(() => {
@@ -33,9 +32,6 @@ const Tilt = ({ rotation = 10, timing = 150, children }) => {
   };
 
   return (
-    // <span onMouseEnter={trigger} style={style}>
-    //   {children}
-    // </span>
     <animated.span onMouseEnter={trigger} style={style}>
       {children}
     </animated.span>
