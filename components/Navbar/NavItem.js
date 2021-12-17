@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
-const NavItem = ({ children, active = false, ...rest }) => {
+const NavItem = ({ link = "#", children, active = false, ...rest }) => {
   const inlineStyle = {
     transition: "opacity 200ms",
   };
@@ -29,7 +29,7 @@ const NavItem = ({ children, active = false, ...rest }) => {
         }`}
       />
       <a
-        href=""
+        href={link}
         className="px-2 py-0 font-medium text-pale-white rounded transition duration-300"
       >
         {children}

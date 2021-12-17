@@ -3,8 +3,15 @@ import Tilt from "../commons/Tilt";
 import NavItem from "./NavItem";
 import React, { useState } from "react";
 
-export default function Navbar({ items, ...rest }) {
+const Navbar = ({ items, ...rest }) => {
   const [style, setStyle] = useState({ opacity: 0 });
+
+  const links = [
+    { label: "Home", link: "#home", active: true },
+    { label: "About", link: "#about" },
+    { label: "Works", link: "#works" },
+    { label: "Experience", link: "#experience" },
+  ];
 
   const onHamburgerIconToggled = () => {
     if (style.opacity == 0) {
@@ -31,18 +38,14 @@ export default function Navbar({ items, ...rest }) {
 
           {/* <!-- navbar items --> */}
           <div className="hidden md:flex items-center space-x-3">
-            <Tilt>
-              <NavItem active={true}>Home</NavItem>
-            </Tilt>
-            <Tilt>
-              <NavItem>About</NavItem>
-            </Tilt>
-            <Tilt>
-              <NavItem>Works</NavItem>
-            </Tilt>
-            <Tilt>
-              <NavItem>Experience</NavItem>
-            </Tilt>
+            {links.map((link, i) => (
+              <Tilt key={i}>
+                <NavItem link={link.link} active={link.active}>
+                  {link.label}
+                </NavItem>
+              </Tilt>
+            ))}
+
             <Button>Contact Me</Button>
           </div>
           {/* <!-- navbar items end --> */}
@@ -109,4 +112,6 @@ export default function Navbar({ items, ...rest }) {
       {/* <!-- mobile menu end --> */}
     </nav>
   );
-}
+};
+
+export default Navbar;
