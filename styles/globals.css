@@ -2,113 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Mosk, Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@layer base {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Mosk, Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      sans-serif;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-.label {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-}
+  .label {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
 
-@font-face {
-  font-family: "Lato";
-  src: url("../public/fonts/Lato-Light.ttf");
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Lato";
+    src: url("../public/fonts/Lato-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Lato";
-  src: url("../public/fonts/Lato-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Lato";
+    src: url("../public/fonts/Lato-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Thin-100.ttf");
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Thin-100.ttf");
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Extra-Light-200.ttf");
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Extra-Light-200.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Light-300.ttf");
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Light-300.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Medium-500.ttf");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Medium-500.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Semi-Bold-600.ttf");
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Semi-Bold-600.ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Bold-700.ttf");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Bold-700.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Extra-Bold-800.ttf");
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Extra-Bold-800.ttf");
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Mosk";
-  src: url("../public/fonts/Mosk-Ultra-Bold-900.ttf");
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Mosk";
+    src: url("../public/fonts/Mosk-Ultra-Bold-900.ttf");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+  }
 
-.hero {
-  width: 100%;
-  height: 562px;
-  /* position: fixed; */
-  background-image: url("../public/images/hero.svg");
+  .hero {
+    width: 100%;
+    height: 562px;
+    background-image: url("../public/images/hero.svg");
+  }
 
-  /* background-size: 100% 8rem; */
+  h1 {
+    @apply text-3xl font-bold md:text-5xl text-pale-white;
+  }
+
+  h2 {
+    @apply text-2xl font-bold md:text-4xl text-pale-white;
+  }
+
+  h3 {
+    @apply text-xl font-bold md:text-3xl text-pale-white;
+  }
+
+  h4 {
+    @apply text-lg font-bold text-pale-white;
+  }
+
+  body {
+    @apply text-base text-pale-white md:text-base;
+  }
 }

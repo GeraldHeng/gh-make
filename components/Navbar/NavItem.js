@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
-export default function NavItem({ children, active = false, ...rest }) {
+const NavItem = ({ children, active = false, ...rest }) => {
   const inlineStyle = {
     transition: "opacity 200ms",
   };
@@ -47,4 +47,6 @@ export default function NavItem({ children, active = false, ...rest }) {
       </div>
     </div>
   );
-}
+};
+
+export default NavItem;
