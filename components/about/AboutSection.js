@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Tilt from "../Tilt";
-import Button from "../Button";
+import Tilt from "../commons/Tilt";
+import Button from "../commons/Button";
 import LanguageListItem from "./LanguageListItem";
 
 const AboutSection = ({ children, ...rest }) => {
@@ -14,7 +14,7 @@ const AboutSection = ({ children, ...rest }) => {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:px-40 px-12 md:pt-20 pt-8 gap-12">
+    <div className="grid grid-cols-2 md:px-40 px-12 md:py-12 py-8 gap-12">
       <div className="flex flex-col gap-8">
         <div>
           <h2 className="text-primary">About Me.</h2>
