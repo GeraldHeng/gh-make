@@ -2,7 +2,7 @@ import HeroSection from "../components/hero/HeroSection";
 import Navbar from "../components/navbar/Navbar";
 import AboutSection from "../components/about/AboutSection";
 import WorkSection from "../components/works/WorkSection";
-import Image from "next/image";
+import Divider from "../components/commons/Divider";
 
 export default function Home() {
   return (
@@ -12,14 +12,8 @@ export default function Home() {
       </HeroSection>
       <AboutSection />
       <div className="flex justify-center py-8">
-        <Image
-          src="/images/section_divider.svg"
-          width={1000}
-          height={30}
-          alt="divider"
-        />
+        <Divider />
       </div>
-
       <WorkSection />
     </div>
   );

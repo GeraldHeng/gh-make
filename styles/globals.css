@@ -134,7 +134,7 @@
   }
 
   h4 {
-    @apply text-lg font-bold text-pale-white;
+    @apply text-lg font-bold md:text-2xl text-pale-white;
   }
 
   body {
