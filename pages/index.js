@@ -4,10 +4,21 @@ import AboutSection from "../components/about/AboutSection";
 import WorkSection from "../components/works/WorkSection";
 import Divider from "../components/commons/Divider";
 import Footer from "../components/footer/Footer";
+import Button from "../components/commons/Button";
+import { scrollTo } from "../utils/scrollTo";
 
 export default function Home() {
+  const buttonStyle = {
+    position: "fixed",
+    bottom: "30px",
+    right: "30px",
+  };
+
+  const goToTop = () => {
+    scrollTo({ id: "home" });
+  };
   return (
-    <div className="">
+    <div>
       <HeroSection id="home">
         <Navbar />
       </HeroSection>
@@ -17,6 +28,9 @@ export default function Home() {
       </div>
       <WorkSection id="works" />
       <Footer />
+      <div style={buttonStyle} onClick={goToTop}>
+        <Button>Go to Top</Button>
+      </div>
     </div>
   );
 }

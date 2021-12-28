@@ -10,7 +10,6 @@ export default function Button({ children, ...rest }) {
       active:bg-accent active:shadow-none
       active:-translate-y-0 active:-translate-x-0
       active:border-accent-light active:border-2
-      
       "
     >
       {children}
