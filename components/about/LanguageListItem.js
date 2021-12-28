@@ -13,7 +13,7 @@ const LanguageListItem = ({ children, name = "No Name", ...rest }) => {
           clipRule="evenodd"
         />
       </svg>
-      <h4 className="text-primary">{name}</h4>
+      <h5 className="text-primary font-bold">{name}</h5>
     </div>
   );
 };

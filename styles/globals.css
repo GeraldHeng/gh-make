@@ -121,6 +121,23 @@
     }
   }
 
+  .footer {
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../public/images/footer.svg");
+  }
+  @media (max-width: 640px) {
+    .footer {
+      height: 100%;
+      background-image: url("../public/images/footer.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 100px;
+    }
+  }
+
   h1 {
     @apply text-3xl font-bold md:text-5xl text-pale-white;
   }

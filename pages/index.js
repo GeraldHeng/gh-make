@@ -3,10 +3,11 @@ import Navbar from "../components/navbar/Navbar";
 import AboutSection from "../components/about/AboutSection";
 import WorkSection from "../components/works/WorkSection";
 import Divider from "../components/commons/Divider";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
-    <div className="pb-40">
+    <div className="">
       <HeroSection>
         <Navbar />
       </HeroSection>
@@ -15,6 +16,7 @@ export default function Home() {
         <Divider />
       </div>
       <WorkSection />
+      <Footer />
     </div>
   );
 }
