@@ -8,14 +8,14 @@ import Footer from "../components/footer/Footer";
 export default function Home() {
   return (
     <div className="">
-      <HeroSection>
+      <HeroSection id="home">
         <Navbar />
       </HeroSection>
-      <AboutSection />
+      <AboutSection id="about" />
       <div className="flex justify-center py-8">
         <Divider />
       </div>
-      <WorkSection />
+      <WorkSection id="works" />
       <Footer />
     </div>
   );

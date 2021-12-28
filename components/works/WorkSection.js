@@ -4,7 +4,7 @@ import FeatureWorkDetail from "./FeatureWorkDetail";
 import OtherWorkCard from "./OtherWorkCard";
 import StackImages from "./StackImages";
 
-const WorkSection = ({ children, ...rest }) => {
+const WorkSection = ({ children, id, ...rest }) => {
   const works = [
     {
       title: "Daises by DDS",
@@ -78,7 +78,7 @@ const WorkSection = ({ children, ...rest }) => {
   ];
 
   return (
-    <div className="md:px-28 px-12 md:py-12 py-8">
+    <div className="md:px-28 px-12 md:py-12 py-8" id={id}>
       <div className="flex flex-col gap-8">
         <div>
           <h2 className="text-primary">Featured Works.</h2>

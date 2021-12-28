@@ -7,10 +7,10 @@ const Navbar = ({ items, ...rest }) => {
   const [style, setStyle] = useState({ opacity: 0 });
 
   const links = [
-    { label: "Home", link: "#home", active: true },
-    { label: "About", link: "#about" },
-    { label: "Works", link: "#works" },
-    { label: "Experience", link: "#experience" },
+    { label: "Home", link: "home", active: true },
+    { label: "About", link: "about" },
+    { label: "Works", link: "works" },
+    { label: "Experience", link: "experience" },
   ];
 
   const onHamburgerIconToggled = () => {

@@ -12,6 +12,7 @@ module.exports = {
         primary: "#02204C",
         accent: "#FF7A7A",
         "accent-dark": "#FF5757",
+        "accent-darker": "#FF1E1E",
         "accent-light": "#FFA5A5",
       },
       boxShadow: {

@@ -27,7 +27,6 @@ const Tilt = ({ rotation = 5, timing = 150, children }) => {
   }, [isTilted, timing]);
 
   const trigger = () => {
-    console.log("trigger");
     setIsTilted(true);
   };
 

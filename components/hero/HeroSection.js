@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const HeroSection = ({ children, ...rest }) => {
+const HeroSection = ({ children, id, ...rest }) => {
   const content = {
     name: "Hi I am Gerald Heng!",
     title:
@@ -10,7 +10,7 @@ const HeroSection = ({ children, ...rest }) => {
   };
 
   return (
-    <div className="flex flex-col hero">
+    <div className="flex flex-col hero" id={id}>
       {children}
       <div className="grid grid-cols-1 md:grid-cols-3 md:px-40 px-12 md:pt-20 pt-8 gap-12">
         <div className="flex flex-col justify-center col-span-2">
