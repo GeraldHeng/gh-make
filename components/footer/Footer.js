@@ -48,23 +48,6 @@ const Footer = ({ children, ...rest }) => {
           </div>
         </div>
       </div>
-      {/* <div className="absolute z-10"> */}
-      {/* <Image
-          src="/images/footer_blob.svg"
-          width={650}
-          height={500}
-          objectFit="contain"
-          alt="blob"
-        />
-      </div>
-      <div className="absolute z-20">
-        <h3 className="text-primary font-black">Hey There!</h3>
-        <p className="text-primary font-black">
-          I am always open up for a chat! <br />
-          Drop me an email at geralddevelop@gmail.com or <br />
-          contact me via social media.
-        </p>
-      </div> */}
     </div>
   );
 };

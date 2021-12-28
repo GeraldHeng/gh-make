@@ -18,20 +18,24 @@ const OtherWorkCard = ({
           <Image src="/images/heart.svg" height={72} width={72} alt="heart" />
           <div className="flex gap-4 pb-2">
             <h3 className="text-primary font-black mr-2">{title}</h3>
-            <Image
-              src="/images/external_link.svg"
-              height={24}
-              width={24}
-              alt="external link"
-              className="hover:bg-accent-light rounded-full"
-            />
-            <Image
-              src="/images/github.svg"
-              height={24}
-              width={24}
-              alt="github link"
-              className="hover:bg-accent-light rounded-full"
-            />
+            <div className="flex justify-center items-center hover:bg-accent-light rounded-full w-8 h-8">
+              <Image
+                src="/images/external_link.svg"
+                height={24}
+                width={24}
+                alt="external link"
+                className="hover:bg-accent-light rounded-full"
+              />
+            </div>
+            <div className="flex justify-center items-center hover:bg-accent-light rounded-full w-8 h-8">
+              <Image
+                src="/images/github.svg"
+                height={24}
+                width={24}
+                alt="github link"
+                className="hover:bg-accent-light rounded-full"
+              />
+            </div>
           </div>
           <div className="flex gap-2 pb-4">
             {tags.map((tag, i) => (
