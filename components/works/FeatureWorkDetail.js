@@ -16,7 +16,10 @@ const FeatureWorkDetail = ({
 
       <div className="flex gap-4 pb-4">
         {tags.map((tag, i) => (
-          <p key={i} className="text-primary">
+          <p
+            key={i}
+            className="text-primary hover:bg-accent-light hover:rounded-full px-2"
+          >
             {tag}
           </p>
         ))}

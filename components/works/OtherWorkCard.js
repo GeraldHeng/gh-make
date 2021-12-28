@@ -37,9 +37,12 @@ const OtherWorkCard = ({
               />
             </div>
           </div>
-          <div className="flex gap-2 pb-4">
+          <div className="flex pb-4">
             {tags.map((tag, i) => (
-              <p key={i} className="text-primary text-xs">
+              <p
+                key={i}
+                className="text-primary text-xs hover:bg-accent-light hover:rounded-full px-2 "
+              >
                 {tag}
               </p>
             ))}
